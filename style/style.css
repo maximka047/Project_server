@@ -1,0 +1,36 @@
+.navbar-collapse{
+    padding-left:60%;
+}
+
+.navbar-brand{
+    padding-left: 2%;
+}
+
+.navbar{
+    background-color:#fff!important;
+}
+.row{
+    margin-top: 60px;
+    justify-content:center;
+    text-align: center;
+}
+
+.row :hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    transform:rotateX(10deg);
+}
+
+.dropdown-item:hover{
+    background-color: rgba(75, 75, 255, 0.979);
+}
+
+
+.les-els{
+    justify-content:space-around;
+    text-align: center;
+}
+
+.les-el{
+    margin-top: 6%;
+}
