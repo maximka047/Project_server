@@ -1,0 +1,27 @@
+.collapse ul{
+    margin-left: 70%;
+}
+
+.navbar{
+    background:url(../images/phon.jpg);
+    background-size: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.navbar b{
+    color: white;
+}
+
+.container{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.container h3{
+    color: rgb(207, 65, 8)
+}
+
+.dropdown-item:hover{
+    background-color: rgba(75, 75, 255, 0.979);
+}
