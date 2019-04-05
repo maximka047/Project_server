@@ -1,9 +1,4 @@
-.navbar-collapse{
-    padding-left:60%;
-}
-
-.navbar-brand b{
-    padding-left: 2%;
+.navbar-brand span{
     color: white;
 }
 
@@ -14,10 +9,13 @@
     border-bottom-right-radius: 15px;
 }
 
-.navbar b{
-    color: white;
+.navbar-light a{
+    color: #fff!important;
 }
 
+.navbar-brand{
+    flex-grow: 1
+}
 
 .row{
     margin-top: 40px;
@@ -44,8 +42,8 @@
 }
 
 .les-el{
-    margin-top: 6%;
-    margin-right: 5%;
+
+    margin: 2% auto;
 }
 
 .les-el:hover{
@@ -54,10 +52,14 @@
 }
 
 #components{
-    border: 3px solid rgb(86, 52, 148);
+    border: 2px solid rgb(86, 52, 148);
     box-shadow: 10px 10px 23px 20px rgba(120,114,114,1);
 }
 
 .dropdown-toggle:hover{
     cursor: pointer;
+}
+
+.row ul{
+    text-align: left;
 }

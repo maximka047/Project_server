@@ -1,5 +1,5 @@
-.collapse ul{
-    margin-left: 70%;
+.navbar-brand span{
+    color: white;
 }
 
 .navbar{
@@ -9,21 +9,57 @@
     border-bottom-right-radius: 15px;
 }
 
-.navbar b{
-    color: white;
+.navbar-light a{
+    color: #fff!important;
 }
 
-.row h5,h1{
+.navbar-brand{
+    flex-grow: 1
+}
+
+.row{
     margin-top: 40px;
+    justify-content:center;
     text-align: center;
 }
 
 .row>h1{
-    margin-top: 80px;
+    margin-top: 40px;
+}
 
+.row :hover{
+    cursor: pointer;
 }
 
 .dropdown-item:hover{
     background-color: rgba(75, 75, 255, 0.979);
 }
 
+
+.les-els{
+    justify-content:space-around;
+    text-align: center;
+}
+
+.les-el{
+
+    margin: 2% auto;
+}
+
+.les-el:hover{
+    transition: 0.3s ease;
+    transform:rotateX(10deg);
+}
+
+#components{
+    border: 2px solid rgb(86, 52, 148);
+    box-shadow: 10px 10px 23px 20px rgba(120,114,114,1);
+}
+
+.dropdown-toggle:hover{
+    cursor: pointer;
+}
+
+.row ul{
+    text-align: left;
+}
