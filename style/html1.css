@@ -1,6 +1,7 @@
-.navbar-brand span{
-    color: white;
+.navbar-brand{
+    margin-left:2%
 }
+
 
 .navbar{
     background:url(../images/phon.jpg);
@@ -9,12 +10,12 @@
     border-bottom-right-radius: 15px;
 }
 
-.navbar-light a{
-    color: #fff!important;
+nav ul{
+    margin-left:20%;
 }
 
-.navbar-brand{
-    flex-grow: 1
+.navbar-light a{
+    color: #fff!important;
 }
 
 .row{
@@ -25,10 +26,6 @@
 
 .row>h1{
     margin-top: 40px;
-}
-
-.row :hover{
-    cursor: pointer;
 }
 
 .dropdown-item:hover{
@@ -42,13 +39,13 @@
 }
 
 .les-el{
-
-    margin: 2% auto;
+   margin: 2% auto;
 }
 
 .les-el:hover{
     transition: 0.3s ease;
     transform:rotateX(10deg);
+    cursor: pointer;
 }
 
 #components{

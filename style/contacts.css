@@ -1,7 +1,3 @@
-.navbar-brand span{
-    color: white;
-}
-
 .navbar{
     background:url(../images/phon.jpg);
     background-size: 100%;
@@ -9,12 +5,12 @@
     border-bottom-right-radius: 15px;
 }
 
-.navbar-light a{
-    color: #fff!important;
+nav ul{
+    margin-left:20%;
 }
 
-.navbar-brand{
-    flex-grow: 1
+.navbar-light a{
+    color: #fff!important;
 }
 
 .row{
@@ -23,21 +19,17 @@
     text-align: center;
 }
 
-.container{
-    text-align: center;
-    margin-top: 80px;
-}
-
-h3{
-    color: rgb(255, 166, 0)
-}
-
 .row>h1{
     margin-top: 40px;
 }
 
-.row :hover{
-    cursor: pointer;
+p{
+    color: rgb(252, 137, 42);
+    margin-top: 80px;
+}
+
+.container{
+    text-align: center;
 }
 
 .dropdown-item:hover{
@@ -51,13 +43,13 @@ h3{
 }
 
 .les-el{
-
-    margin: 2% auto;
+   margin: 2% auto;
 }
 
 .les-el:hover{
     transition: 0.3s ease;
     transform:rotateX(10deg);
+    cursor: pointer;
 }
 
 #components{

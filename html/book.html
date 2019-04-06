@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Все про WEB</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/book.css">
+
+</head>
+<body>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                  <a class="navbar-brand col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" href="index.html">
+                    <img src="../images/IT.png" width=40 height=37 alt="">
+                    <b>Все про WEB</b>
+                  </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+            <div class="collapse navbar-collapse col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Головна<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contacts.html">Контакти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book.html">Придбати книгу</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="components.html">Компоненти WEB</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<div class="container">
+    <div class="col-xl-5">
+            <img src="../images/book1.jpg" alt="">
+    </div>
+    <div class="col-xl-7">
+        <div class="info">
+            <h2>Countertop microwave with smart inverter</h2>
+            <p>You'll be amazed with its simplicity and durability</p>
+            <p class="price">₴102.00</p>
+            
+            <div class="btn">
+                <form action="form.php">
+                    <input type="submit" class="submit" value="Add to cart">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="modal_form"> 
+        <span id="modal_close">&times;</span> 
+            <form action="form.php">
+                <label for="name">Введіть своє ім'я</label><br>
+                <input type="text" class="form-control" placeholder="Your name" name="userName" required><br>
+                <label for="email">Введіть свою пошту</label><br>
+                <input type="text" class="form-control" placeholder="Your email" name="email"><br>
+                <label><input type="radio" name="pay" value="online">&nbsp;Онлайн</label>
+                <label><input type="radio" name="pay" value="offline">&nbsp;При отриманні</label>
+                <label><input type="checkbox" id="confirm">&nbsp;Замовлення підтверджую</label>
+                <input type="submit" name="submit" value="Підтвердити замовлення">
+                <br><br>
+                <p class="red"></p> 
+            </form>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="form.js"></script>
+    
+    <script src="../JS/form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>

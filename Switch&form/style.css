@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+}
+.container{
+    width: 1170px;
+    margin: 20px auto 50px;
+}
+
+.bph img{
+    width: 400px;
+}
+img{
+    border: 1px solid white;
+}
+
+.photo img{
+    width: 80px;
+}
+
+.main{
+    display: flex;
+
+}
+
+.photos, .info{
+    width: 50%;
+}
+
+.stock{
+    color: green;
+    text-transform: uppercase;
+}
+
+.f-w-700{
+    font-weight: 700;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+.rank{
+    display: flex;
+    align-items: center;
+}
+
+.rank a{
+    border-left: 1px solid grey;
+    padding-left: 10px;
+    margin: 0 10px;
+}
+
+.price{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.quantity{
+    margin-left: 25px;
+}
+
+input[type=text], input[type=number]{
+    padding: 0;
+    box-sizing: border-box;
+    width: 70px;
+    text-align: center;
+}
+
+ .btn input[type=submit]{
+    margin-left: 10px;
+    padding: 15px;
+    background: rgba(0, 0, 255);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn input[type=submit]:hover{
+    background: #000;
+}
+
+input{
+    height: 50px;
+}
+
+.btn{
+    margin-bottom: 20px;
+}
+
+.ifa{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 10px;
+}
+
+i{
+    font-size: 20px;
+}
+
+.more-info h2{
+    text-transform: capitalize;
+    color: #00f;
+}
+
+.more-info .someprop:nth-child(2n){
+    background-color: lightgray;
+}
+
+.someprop{
+    display: flex;
+    justify-content: flex-start;
+    line-height: 4em;
+    /*padding: 15px 10px;*/
+}
+
+.someprop span{
+    font-weight: bold;
+}
+
+.prop{
+    padding-left: 10px;
+    width: 30%;
+
+}
+
+.value{
+    padding-left: 10px;
+    width: 60%;
+    border-left: 1px solid gray;
+}
+
+.big_photo{
+    border: 1px solid blue;
+}
+
+#modal_form {
+    width: 500px; 
+    height: 600px;
+    border-radius: 5px;
+    background: #fff;
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    display: none;
+    z-index: 5;
+    padding: 20px 50px;
+}
+
+#modal_form #modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    font-size: 2rem;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+#overlay {
+    z-index:3;
+    position:fixed;
+    background-color:#000;
+    opacity:0.5;
+    width:100%; 
+    height:100%;
+    top:0;
+    left:0;
+    cursor:pointer;
+    display:none;
+}
+
+#modal_form form, #modal_form form>* {
+    width: 100%!important;
+}
+
+#modal_form form>input[type=checkbox], #modal_form form>input[type=radio]{
+    display: flex;
+    align-items: center
+}
+
+#modal_form label{
+    display: flex;
+    align-items: center;
+}
+
+.red{
+    color: red;
+    font-size: 1rem;
+}
