@@ -43,13 +43,11 @@ p{
 
 .container{
     margin-top: 80px;
-    text-align: center;
 }
 
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 a{
@@ -74,7 +72,7 @@ body{
     font-weight: 700;
 }
 
-h2{
+h3{
     text-transform: uppercase;
 }
 
@@ -134,4 +132,12 @@ h2{
 .red{
     color: red;
     font-size: 1rem;
+}
+
+.container{
+    display: flex;
+}
+
+.no{
+    color: gray;
 }

@@ -55,6 +55,12 @@ window.onload = function(){
         	} else{
         		console.log(userName.value+"!", "Ви замовили товар з ", pay.value, " оплатою. Електронна пошта для зв'язку -", email.value);
         	}
-    	}
-    })
+        }
+
+        if(isConfirm.checked == true && userName.value.length >= 2 && email.value.includes('@'&&'.')){
+            alert("Пробачте, але книги поки що немає в наявності");
+        }
+        }
+        
+    )
 }
