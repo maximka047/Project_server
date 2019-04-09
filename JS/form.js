@@ -31,12 +31,36 @@ window.onload = function(){
         let pay = document.forms[1].elements['pay'];
         let isConfirm = document.getElementById('confirm');
         
-        let warning = document.querySelector('.red');
-
+        let warning = document.querySelector('.warning-confirm');
+        let warning_name = document.querySelector('.warning-name');
+        let warning_email = document.querySelector('.warning-email');
+        let warning_pay = document.querySelector('.warning-pay');
+        let pay_on = document.querySelector('.on')
+        let pay_off = document.querySelector('.off')
         if(!isConfirm.checked){
             warning.textContent = "Потрібно підтвердити замовлення!!!";   
         } else{
             warning.textContent = "";
+        }
+
+        if(userName.value.length < 2){
+            userName.classList.add('is-invalid');
+            warning_name.textContent = " Уважно заповніть ім'я користувача!"
+        } else{
+            warning_name.textContent = "";
+        }
+
+        if(email.value.length < 2 || !email.value.includes('@'&&'.')){
+            email.classList.add('is-invalid');
+            warning_email.textContent = " Уважно заповніть електронну пошту!"
+        } else{
+            warning_email.textContent = "";
+        }
+
+        if(pay_on.checked == false && pay_off.checked == false){
+            warning_pay.textContent = "Виберіть спосіб оплати!!!";   
+        } else{
+            warning_pay.textContent = "";
         }
 
         for(let i = 0; i < form.length; i++){
@@ -45,20 +69,10 @@ window.onload = function(){
             } 
         }
 
-        if(userName.value.length < 2){
-            userName.classList.add('is-invalid');
-            warning.textContent += " Уважно заповніть ім'я користувача!"
-        } else {
-        	if(email.value.length < 2 || !email.value.includes('@')){
-            	email.classList.add('is-invalid');
-            	warning.textContent += " Уважно заповніть електронну пошту!"
-        	} else{
-        		console.log(userName.value+"!", "Ви замовили товар з ", pay.value, " оплатою. Електронна пошта для зв'язку -", email.value);
-        	}
-        }
-
         if(isConfirm.checked == true && userName.value.length >= 2 && email.value.includes('@'&&'.')){
             alert("Пробачте, але книги поки що немає в наявності");
+            document.getElementById('modal_form').removeAttribute('style');
+            overlay.style.display = 'none';
         }
         }
         
